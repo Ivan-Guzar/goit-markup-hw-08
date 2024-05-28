@@ -1,0 +1,48 @@
+.client {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 50px;
+}
+
+.client__company {
+    width: 170px;
+    height: 92px;
+    padding: 0;
+    &:not(:last-child) {
+            margin-right: 30px;
+        }
+
+}
+
+.client__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 170px;
+    height: 92px;
+
+    fill: getColor('client');
+
+    border: 1px solid getColor('client');
+    border-radius: 4px;
+
+    transition-property: border, fill;
+    transition-duration: 250ms, 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1),
+        cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,&:focus {
+            fill: getColor('brand');
+                outline: none;
+                border: 1px solid getColor('brand');
+                border-radius: 4px;
+            }
+        }
+
+        .client__logo {
+            width: 106px;
+            height: 60px;
+        }

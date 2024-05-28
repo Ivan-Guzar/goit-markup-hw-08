@@ -1,0 +1,20 @@
+.container.header__container {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    border-bottom: 1px solid getColor('header-bord');
+}
+
+.header__logo {
+    font-family: $font-logo;
+    font-weight: 700;
+    font-size: 26px;
+    color: getColor('logo');
+}
+
+.header__logo-accent {
+    color: getColor('brand');
+}
+

@@ -1,0 +1,37 @@
+.team-section {
+    background-color: getColor('bg-light');
+}
+
+.person {
+    display: flex;
+
+    &__item:not(:last-child) {
+            margin-right: 30px;
+        }
+    
+    &__portrait {
+        border-radius: 0 0 4px 4px;
+        background-color: getColor('light');
+        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+            0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    }
+
+    &__info {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    &__name {
+        margin-bottom: 10px;
+    
+        font-weight: 500;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    &__job {
+        font-size: 16px;
+        text-align: center;
+        color: getColor('secondary');
+    }
+}

@@ -1,0 +1,34 @@
+$colors: (
+    'primary': #212121,
+    'brand': #2196f3,
+    'secondary': #757575,
+    'light': #ffffff,
+    'bg-dark': #2f303a,
+    'bg-hero': #c4c4c4,
+    'logo': #000000,
+    'light-secondary': rgba(255, 255, 255, 0.6),
+    'input-footer': rgba(255, 255, 255, 0.3),
+    'light-three': rgba(255, 255, 255, 0.1),
+    'bg-light': #f5f4fa,
+    'bg-button': #188ce8,
+    'border': #eeeeee,
+    'header-bord': #ececec,
+    'client': #afb1b8,
+    'bg-text':  rgba(47, 48, 58, 0.8),
+    'bg-portfolio': rgba(33, 150, 243, 0.9),
+    'backdrop': rgba(0, 0, 0, 0.2),
+    'bg-modal': rgba(0, 0, 0, 0.1),
+    'modal-border': rgba(33, 33, 33, 0.2),
+    'text-comment': rgba(117, 117, 117, 0.5)
+);
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+}
+
+$font-primary: 'Roboto',
+sans-serif;
+
+$font-logo: 'Raleway',
+sans-serif;
+

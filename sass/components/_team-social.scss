@@ -1,0 +1,43 @@
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.social__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+
+    cursor: pointer;
+
+    fill: getColor('client');
+    border-radius: 50%;
+
+    transition-property: background-color, fill;
+    transition-duration: 250ms, 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1),
+        cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,&:focus {
+            fill: getColor('light');
+                background-color: getColor('brand');
+                border-radius: 50%;
+                outline: none;
+        }
+}
+
+.social {
+    &__link:not(:last-child) {
+            margin-right: 10px;
+        }
+    &__card {
+        width: 20px;
+        height: 20px;
+        padding: 0;
+    }
+}

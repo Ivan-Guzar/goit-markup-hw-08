@@ -1,0 +1,44 @@
+.site-contacts {
+    display: inline-flex;
+    margin-left: auto;
+    &__item:not(:last-child) {
+            margin-right: 50px;
+        }
+}
+
+.site-contacts__link {
+    display: inline-flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: getColor('secondary');
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,&:focus {
+        color: getColor('brand')
+    }
+}
+
+.site-contacts {
+
+    &__mail {
+        width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+    }
+
+    &__smartphone {
+    width: 10px;
+        height: 16px;
+        margin-right: 10px;
+        fill: currentColor;
+    }
+
+}
