@@ -41,9 +41,10 @@
 
     background-color: getColor('light');
 
-    &:hover, &:focus {
-            fill: getColor('brand');
-        }
+    &:hover,
+    &:focus {
+        fill: getColor('brand');
+    }
 }
 
 .modal__icon-close {
@@ -164,10 +165,12 @@
     line-height: 1.88;
     letter-spacing: 0.06em;
     color: getColor('light');
-    &:hover, &:focus {
-            background-color: getColor('bg-button');
-            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-        }
+
+    &:hover,
+    &:focus {
+        background-color: getColor('bg-button');
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    }
 }
 
 .input {

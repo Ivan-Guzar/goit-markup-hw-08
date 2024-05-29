@@ -1,10 +1,11 @@
 .hero-section {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    max-width: 1600px;
-    min-height: 600px;
+    width: 100%;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
+
+    display: flex;
+    align-items: center;
 
     text-align: center;
     background-color: getColor('bg-hero');
@@ -17,29 +18,30 @@
 
     &__title {
         margin-bottom: 30px;
-            max-width: 696px;
-            margin-left: auto;
-            margin-right: auto;
-        
-            font-weight: 900;
-            font-size: 44px;
-            line-height: 1.36;
-            letter-spacing: 0.06em;
-        
-            text-transform: uppercase;
-        
-            color: getColor('light');
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.6;
+        letter-spacing: 0.06em;
+
+        text-transform: uppercase;
+
+        color: getColor('light');
     }
 }
 
 .hero-section__button {
     border-radius: 4px;
-    padding: 10px 32px;
-    min-width: 216px;
+    width: 200px;
+    height: 50px;
+
 
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.88;
+    line-height: 1.6;
     letter-spacing: 0.06em;
     text-align: center;
 
@@ -53,8 +55,9 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,&:focus {
+    &:hover,
+    &:focus {
         background-color: getColor('bg-button');
-            color: getColot('light');
+        color: getColot('light');
     }
 }

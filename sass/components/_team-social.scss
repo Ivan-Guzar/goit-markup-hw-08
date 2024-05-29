@@ -23,18 +23,20 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1),
         cubic-bezier(0.4, 0, 0.2, 1);
 
-        &:hover,&:focus {
-            fill: getColor('light');
-                background-color: getColor('brand');
-                border-radius: 50%;
-                outline: none;
-        }
+    &:hover,
+    &:focus {
+        fill: getColor('light');
+        background-color: getColor('brand');
+        border-radius: 50%;
+        outline: none;
+    }
 }
 
 .social {
     &__link:not(:last-child) {
-            margin-right: 10px;
-        }
+        margin-right: 10px;
+    }
+
     &__card {
         width: 20px;
         height: 20px;

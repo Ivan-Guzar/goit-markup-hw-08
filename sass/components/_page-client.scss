@@ -1,18 +1,18 @@
+.client__title {
+    margin-bottom: 30px;
+}
 .client {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
 
-    margin-top: 50px;
+    margin-top: 30px;
+
+    margin: -15px;
 }
 
 .client__company {
-    width: 170px;
-    height: 92px;
-    padding: 0;
-    &:not(:last-child) {
-            margin-right: 30px;
-        }
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
 
 }
 
@@ -21,7 +21,7 @@
     align-items: center;
     justify-content: center;
 
-    width: 170px;
+    width: 210px;
     height: 92px;
 
     fill: getColor('client');

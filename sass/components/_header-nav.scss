@@ -3,10 +3,11 @@
 }
 
 .site-nav {
-    display: flex; 
+    display: flex;
+
     &__item:not(:last-child) {
-            margin-right: 50px;
-        }
+        margin-right: 50px;
+    }
 }
 
 .site-nav__link {
@@ -15,13 +16,14 @@
     padding-bottom: 32px;
     font-weight: 500;
     letter-spacing: 0.02em;
-    color: getColor('primary');
+    color: getColor('primary'); 
 
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,&:focus {
+    &:hover,
+    &:focus {
         color: getColor('brand')
     }
 }
@@ -29,20 +31,18 @@
 .site-nav__link-current {
     position: relative;
     color: getColor('brand');
+
     &::after {
         content: '';
-        
-            position: absolute;
-            left: 0;
-            bottom: 0;
-        
-            display: block;
-            width: 100%;
-            height: 4px;
-            border-radius: 2px;
-            background-color: getColor('brand');
+
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        display: block;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: getColor('brand');
     }
 }
-
-
-    

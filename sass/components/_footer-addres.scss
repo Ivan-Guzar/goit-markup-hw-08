@@ -1,11 +1,14 @@
 .container__down {
-    display: flex;
-    align-items: baseline;
+    // display: flex;
+    // align-items: center;
+    text-align: center;
 }
+
 .container__footer {
-    &:nth-child(-n + 1) {
-            margin-right: 70px;
-        }
+    display: block;
+
+    margin-bottom: 60px;
+
 }
 
 .footer__list {
@@ -17,41 +20,47 @@
 
 .footer__logo {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 28px;
 
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     color: getColor('light');
+
+    text-align: center;
 }
+
 .footer__logo-accent {
     color: getColor('brand');
 }
 
 .footer {
-    width: 231px;
-    height: 81px;
-    &__item:not(:last-child) {
-            margin-bottom: 9px;
-        }
+
+    &__item {
+        text-align: center;
+        margin-bottom: 12px;
+    
+    }
 }
 
 .footer__adress {
-    line-height: 1.7;
+    line-height: 1.14;
     color: getColor('light');
     font-style: normal;
+    
 
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-   &:hover, &:focus {
+    &:hover,
+    &:focus {
         color: getColor('brand');
     }
 }
 
 .footer__contacts {
-    line-height: 1.7;
+    line-height: 1.14;
     color: getColor('light-secondary');
     font-style: normal;
 
@@ -59,8 +68,8 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover, &:focus {
-            color: getColor('brand');
-        }
+    &:hover,
+    &:focus {
+        color: getColor('brand');
+    }
 }
-

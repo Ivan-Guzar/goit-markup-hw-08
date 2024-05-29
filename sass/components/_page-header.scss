@@ -1,20 +1,31 @@
-.container.header__container {
+.header {
     display: flex;
     align-items: center;
+    border-bottom: 1px solid getColor('header-bord');
+
+    @media screen and (max-width: 480px) {
+        height: 60px;
+    }
 }
 
-.header {
-    border-bottom: 1px solid getColor('header-bord');
+.header__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 480px) {
+        display: none;
+        
+    }
 }
+
 
 .header__logo {
     font-family: $font-logo;
     font-weight: 700;
     font-size: 26px;
-    color: getColor('logo');
+    color: getColor('primary');
 }
 
 .header__logo-accent {
     color: getColor('brand');
 }
-
