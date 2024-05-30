@@ -1,6 +1,8 @@
 .header {
     display: flex;
     align-items: center;
+    justify-content: start;
+    margin-left: auto;
     border-bottom: 1px solid getColor('header-bord');
 
     @media screen and (max-width: 480px) {
@@ -11,10 +13,34 @@
 .header__container {
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    @media screen and (max-width: 480px) {
+    align-items: center;
+   justify-content: space-between;
+}
+
+.menu-toggle {
+    display: inline-flex;
+    margin-left: auto;
+    padding: 0;
+    border: none;
+    background-color: getColor('light');
+}
+
+.menu-toggle .icon__cross {
+    display: none;
+}
+
+.menu-toggle.is-open .icon__cross {
+    display: block;
+}
+
+.menu-toggle.is-open .icon__menu {
+    display: none;
+}
+
+.mobile-menu {
+@media screen and (max-width: 480px) {
         display: none;
-        
+
     }
 }
 
