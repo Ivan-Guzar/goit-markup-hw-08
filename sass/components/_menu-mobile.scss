@@ -1,0 +1,102 @@
+.menu__container {
+    position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        padding: 32px;
+        background-color: getColor('light');
+        z-index: 999;
+    
+        transform: translateX(100%);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        height: 100%;
+}
+
+.menu__container.is-open {
+    transform: translateX(0);
+}
+
+.menu__container .menu-toggle {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 16px;
+    right: 16px;
+    color: #fff;
+
+    & .icon__cross:hover,
+    & .icon__cross:focus {
+        fill: getColor('brand');
+
+    }
+}
+
+
+.mobile__nav__item:not(:last-child) {
+            margin-bottom: 32px;
+
+}
+
+.mobile__nav__link {
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+
+    color: currentColor;
+
+    &:hover, &:focus {
+        color: getColor('brand');
+    }
+
+    
+}
+
+.mobile__tel {
+    font-size: 34px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+
+    color: getColor('brand');
+    
+}
+
+.mobile__mail {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+
+    color: getColor('secondary');
+}
+
+.mobile__contacts__item:not(:last-child) {
+    margin-bottom: 32px;
+
+}
+
+.mobile__social {
+    display: flex;
+    margin-top: 64px;
+}
+
+.mobile__social__item:not(:last-child) {
+    padding-right: 10px;
+
+    border-right: 1px solid getColor('modal-border')
+}
+
+.mobile__social__item:not(:first-child) {
+    margin-left: 10px;
+}
+.mobile__social__text {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+
+    color: getColor('brand');
+}

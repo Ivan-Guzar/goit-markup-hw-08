@@ -1,4 +1,5 @@
 .header {
+    
     display: flex;
     align-items: center;
     justify-content: start;
@@ -19,11 +20,19 @@
 
 .menu-toggle {
     display: inline-flex;
+    
     margin-left: auto;
     padding: 0;
     border: none;
     background-color: getColor('light');
+
+    & .icon__menu:hover,
+    & .icon__menu:focus {
+        fill: getColor('brand');
+    }
 }
+
+
 
 .menu-toggle .icon__cross {
     display: none;
@@ -31,13 +40,18 @@
 
 .menu-toggle.is-open .icon__cross {
     display: block;
+   
 }
 
 .menu-toggle.is-open .icon__menu {
-    display: none;
+    // display: none;
 }
 
-.mobile-menu {
+
+
+
+
+.header__nav {
 @media screen and (max-width: 480px) {
         display: none;
 
